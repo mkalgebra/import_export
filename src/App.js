@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Pesek from './Dog';
+import {a} from "./random";
+import {b} from "./random";
+import {sum as zbroji} from "./random";
+import * as SVE from './random';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>{Pesek.ime}</p>
+      <p>{Pesek.pasmina}</p>
+      <p>{Pesek.boja}</p>
+      <p>{a}</p>
+      <p>{b}</p>
+      <p>{zbroji(SVE.a, SVE.b)}</p>
     </div>
   );
 }
